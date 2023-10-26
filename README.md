@@ -18,18 +18,22 @@ To get started with this application, follow these steps:
 
 2. Change your working directory to the project folder:
 
-  ```shell
-  cd react-table-example
+   ```shell
+    cd react-table-poc
+
 
 3. Install the dependencies:
 
-  ```shell
-  npm install
+    ```shell
+      npm install
+
 
 4. Start the application:
 
    ```shell
-   npm start
+    npm start
+
+    
 
 ## Usage
 
