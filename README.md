@@ -14,21 +14,21 @@ To get started with this application, follow these steps:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/react-table-example.git
+   git clone https://github.com/kmdurga67/react-table-poc.git
 
 2. Change your working directory to the project folder:
 
-  ```bash
+  ```shell
   cd react-table-example
 
 3. Install the dependencies:
 
-  ```bash
+  ```shell
   npm install
 
 4. Start the application:
 
-   ```bash
+   ```shell
    npm start
 
 ## Usage
