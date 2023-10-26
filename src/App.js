@@ -1,12 +1,12 @@
 import "./App.css";
 import GlobalFiltering from "./components/GlobalFiltering";
-//import SortingTable from "./components/SortingTable";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      {/* <SortingTable/> */}
-      <GlobalFiltering/>
+      <Header />
+      <GlobalFiltering />
     </>
   );
 }

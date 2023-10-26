@@ -58,14 +58,12 @@ const GlobalFiltering = () => {
     setGlobalFilter,
   } = tableInstance;
 
-  //  const { getTableProps, getTableBodyProps, headerGroups, footerGroups, rows } =
-  //tableInstance;
-
   const { globalFilter } = state;
 
   return (
-    <div className="overflow-x-auto m-1">
+    <div className="pt-5 m-2">
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
+      <div className="overflow-x-auto overflow-y-auto h-[32rem]">
       <table
         {...getTableProps}
         className="min-w-full bg-white rounded-lg shadow-md"
@@ -115,6 +113,7 @@ const GlobalFiltering = () => {
           })}
         </tbody>
       </table>
+      </div>
       <div className="flex items-center justify-center mt-3">
         <button
           onClick={() => previousPage()}
@@ -132,12 +131,16 @@ const GlobalFiltering = () => {
         </button>
       </div>
       <pre>
-        {JSON.stringify(
+      {selectedFlatRows.length > 0 ? (
+        JSON.stringify(
           selectedFlatRows.map((row) => row.original),
           null,
           2
-        )}
-      </pre>
+        )
+      ) : (
+        null
+      )}
+    </pre>
     </div>
   );
 };

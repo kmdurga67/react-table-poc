@@ -1,12 +1,17 @@
 const COLUMNS = [
-    {Header: 'ID', accessor: 'id', Footer:'ID'},
-    {Header: 'First Name', accessor: 'first_name', Footer:'First Name'},
-    {Header: 'Last Name', accessor: 'last_name', Footer:'Last Name'},
-    {Header: 'Email Address', accessor: 'email', Footer:'Email Address'},
-    {Header: 'Gender', accessor: 'gender', Footer:'Gender'},
-    {Header: 'Age', accessor: 'age', Footer:'Age'},
-    {Header: 'Country', accessor: 'country', Footer:'Country'},
-    {Header: 'Phone Number', accessor: 'phone_no', Footer:'Phone Number'}
+  { Header: "ID", accessor: "id" },
+  { Header: "First Name", accessor: "first_name" },
+  { Header: "Last Name", accessor: "last_name" },
+  { Header: "Email Address", accessor: "email" },
+  { Header: "Gender", accessor: "gender" },
+  { Header: "Age", accessor: "age" },
+  { Header: "Phone Number", accessor: "phone_number" },
+  { Header: "Account Number", accessor: "account_number" },
+  { Header: "Employee", accessor: "employee" },
+  { Header: "Card Number", accessor: "card" },
+  { Header: "Card Type", accessor: "card_type" },
+  { Header: "City", accessor: "city" },
+  { Header: "Country", accessor: "country" },
 ];
 
 export default COLUMNS;
