@@ -98,8 +98,14 @@ const GlobalFiltering = () => {
             return (
               <tr
                 {...row.getRowProps()}
-                className={rowIndex % 2 === 0 ? "bg-gray-200" : "bg-gray-100"}
-              >
+                // className={rowIndex % 2 === 0 ? "bg-gray-200" : "bg-gray-100"}
+                className={`${
+                  row.isSelected
+                    ? 'bg-orange-200' 
+                    : 'bg-white-100, cursor-pointer'
+                }`}
+                onClick={() => row.toggleRowSelected()}
+              > 
                 {row.cells.map((cell) => (
                   <td
                     {...cell.getCellProps()}
